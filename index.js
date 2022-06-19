@@ -15,3 +15,21 @@ console.log('even numbers are');
 for (var i = 1 ; i < 10 ; i += 2 ) {
    console.log(i);
 }
+
+//Print the sum of all even numbers in a range from a to b. (Including a,b)
+
+function sumNatural(n)
+{
+    let sum = Math.floor(n * (n + 1));
+    return sum;
+}
+ 
+function sumEven(a, b)
+{
+    return sumNatural(Math.floor(b/2)) - sumNatural(Math.floor(a-1) / 2);
+}
+     
+        let a = 2, b = 5;
+        console.log ("Sum of Natural numbers from a to b is "+
+         sumEven(a, b));
+    
