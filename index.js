@@ -62,3 +62,16 @@ function firstdigit(m)
     console.log(firstdigit(m) + " "+ lastdigit(m));
    
     
+    //
+
+    
+    let g=407;
+    let fdigit=g%10;
+    let seconddigit=Math.floor(g/10)%10;
+    let ldigit=Math.floor(g/100);
+    if(fdigit**3+seconddigit**3+ldigit**3==g)
+    {
+      console.log("armstrong no");
+    }else{
+      console.log("not a armstrong no");
+    }
