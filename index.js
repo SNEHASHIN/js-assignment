@@ -33,7 +33,7 @@ function sumEven(a, b)
         console.log ("Sum of Natural numbers from a to b is "+
          sumEven(a, b));
 
-//Check whether the given number is an armstrong number or not. 
+//Check whether the given number is equal to its reverse number or not 
 
 let rev=0;
 let d=12345
@@ -44,4 +44,21 @@ while(d!=0){
   d=Math.floor(d/10);
 }
 console.log("Reverse number :" +rev);
+
+
+//Write a program to read the first and last digit of a number
+
+let m = 98562;
+function firstdigit(m)
+    {
+        while (m >= 10) 
+            m /= 10;
+        return Math.floor(m);
+    }
+    function lastdigit(m){
+        return Math.floor(m % 10);
+    }
+
+    console.log(firstdigit(m) + " "+ lastdigit(m));
+   
     
