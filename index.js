@@ -32,4 +32,16 @@ function sumEven(a, b)
         let a = 2, b = 5;
         console.log ("Sum of Natural numbers from a to b is "+
          sumEven(a, b));
+
+//Check whether the given number is an armstrong number or not. 
+
+let rev=0;
+let d=12345
+let lastDigit;
+while(d!=0){
+  lastDigit=d%10;
+  rev=rev*10+lastDigit;
+  d=Math.floor(d/10);
+}
+console.log("Reverse number :" +rev);
     
